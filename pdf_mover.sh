@@ -1,5 +1,9 @@
 #pdf move to folder
-read -p "Enter directry name : "  dir
-path=`find / -type d -name $dir`
-cd $path
+#!/bin/bash
+# set the directory name to search for
+read -p "Enter directry name : "  dir_name
+cd ~
+# search for the directory and store the path in a variable
+dir_path=$(sudo find $(pwd) -type d -name $dir_name)
+echo $dir_path
 
