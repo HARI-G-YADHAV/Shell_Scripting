@@ -1,5 +1,5 @@
 #pdf move to folder
-read -p "Enter directry name : "  dir
-path=`find / -type d -name $dir`
-cd $path
+#!/bin/bash
+read -p "Enter path : "  p
+`cd /home/hari/Desktop/`
 
