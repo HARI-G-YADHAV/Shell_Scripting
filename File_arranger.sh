@@ -1,5 +1,3 @@
-#pdf move to folder
-#!/bin/bash
 
 # set the directory name to search for
 read -p "Enter directry name : "  dir_name
@@ -13,5 +11,23 @@ ls
 for i in '*.pdf'
 do
 	mv $i pdf
+done
+
+mkdir zip
+for i in ' *.zip '
+do 
+        mv $i zip
+done
+
+mkdir images
+for i in '*.png & *.jpeg & *.jpg'
+do
+	mv $i images
+done
+
+mkdir doc
+for i in '*.docx & *.csv'
+do 
+        mv $i doc
 done
 
